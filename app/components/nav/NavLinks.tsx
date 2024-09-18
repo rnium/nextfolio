@@ -15,7 +15,7 @@ const NavLinks = () => {
                         href={nav.path}
                         className={pathname === nav.path ? '' : 'text-stone-400'}
                     >
-                        <span className={pathname === nav.path ? 'text-accent' : ''}>#</span>
+                        <span className={pathname === nav.path ? 'text-[#C778DD]' : ''}>#</span>
                         <span className="">
                             {nav.title}
                         </span>

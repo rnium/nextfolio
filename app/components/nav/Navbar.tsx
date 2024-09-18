@@ -1,40 +1,45 @@
 import React from 'react';
 import Image from 'next/image';
-
-import { headers } from 'next/headers';
+import Link from 'next/link'
 import logo from '@/public/images/default.svg'
-import { Stack } from '@mui/material';
+import { Box, Stack, AppBar, Toolbar } from '@mui/material';
 import NavLinks from './NavLinks';
-
-
 
 
 const Navbar = () => {
     return (
-        <div className='navbar flex max-w-6xl mx-auto px-4 sm:px-8 md:px-0 py-7'>
-            <Stack
-                className='grow'
-                direction="row"
-                spacing={2}
-            >
-                <Image
-                    src={logo}
-                    width={25}
-                    alt="logo"
-                    quality={100}
-                />
-                <h5>
-                    Saiful Islam Rony
-                </h5>
-            </Stack>
-            <Stack
-                direction='row'
-                spacing={3}
-            >
-                <NavLinks />
-            </Stack>
-
-        </div>
+        <Box sx={{display: 'flex'}}>
+            <AppBar elevation={0} component='nav' sx={{ backgroundColor: '#282C33' }}>
+                <Toolbar
+                    className='mx-20 max-sm:mx-0'
+                >
+                    <Box flexGrow={1}>
+                        <Link href="/">
+                            <Stack
+                                direction="row"
+                                spacing={2}
+                            >
+                                <Image
+                                    src={logo}
+                                    width={25}
+                                    alt="logo"
+                                    quality={100}
+                                />
+                                <h5 className="font-bold">
+                                    Saiful Islam Rony
+                                </h5>
+                            </Stack>
+                        </Link>
+                    </Box>
+                    <Stack
+                        direction='row'
+                        spacing={3}
+                    >
+                        <NavLinks />
+                    </Stack>
+                </Toolbar>
+            </AppBar>
+        </Box>
     )
 }
 
