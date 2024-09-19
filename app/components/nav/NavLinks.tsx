@@ -13,10 +13,10 @@ const NavLinks = () => {
                 navlinks.map((nav: NavLink, idx: number) => (
                     <Link
                         href={nav.path}
-                        className={pathname === nav.path ? '' : 'text-stone-400'}
+                        className={pathname === nav.path ? '' : 'text-slate-400'}
                     >
                         <span className={pathname === nav.path ? 'text-[#C778DD]' : ''}>#</span>
-                        <span className="">
+                        <span className="transition-all duration-300">
                             {nav.title}
                         </span>
                     </Link>

@@ -10,7 +10,9 @@ export default function RootLayout({
       <div className="relative z-40">
         <Navbar />
       </div>
-      {children}
+      <main className="mx-20 px-4 mt-10 py-5">
+        {children}
+      </main>
     </>
   );
 }
