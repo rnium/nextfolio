@@ -11,7 +11,6 @@ import qutation from '@/public/images/quotation.svg'
 const Hero = () => {
     return (
         <Box
-            sx={{ my: 10 }}
         >
             <Grid
                 container

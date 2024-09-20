@@ -52,21 +52,31 @@ export const projects: ProjectData[] = [
     },
 ]
 
-export const SkillGroups: {[key: string]: SkillGroup[]} = {
-    group1: [
+export const skillGroupsData: SkillGroup[][] = [
+    [
         {
-            title: 'Programming Languages',
+            title: 'Languages',
             skills: ['C++', 'Python', 'JavaScript', 'TypeScript']
         }
     ],
-    group2: [
+    [
         {
             title: 'Frontend',
-            skills: ['HTML', 'CSS', 'Tailwind CSS', 'Bootstrap', 'ReactJS']
+            skills: ['HTML', 'CSS', 'Tailwind CSS', 'Bootstrap', 'ReactJS', 'NextJS']
         },
         {
             title: 'Backend',
-            skills: ['Django', 'DRF', 'FastAPI', 'NextJS']
+            skills: ['Django', 'DRF', 'FastAPI']
         },
     ],
-}
+    [
+        {
+            title: 'Server',
+            skills: ['Linux', 'Docker', 'Nginx', 'Gunicorn', 'PostgreSQL', 'MySQL']
+        },
+        {
+            title: "Others",
+            skills: ['Markdown', 'Git', 'Github Actions', 'Vim', 'Postman']
+        }
+    ]
+]
