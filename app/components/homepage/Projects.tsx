@@ -14,7 +14,7 @@ const Projects = () => {
                         <span className='text-[#C778DD]'>#</span>
                         projects
                     </h4>
-                    <div className="w-96 h-[1px] bg-[#C778DD]" />
+                    <div className="max-sm:hidden w-96 h-[1px] bg-[#C778DD]" />
                 </div>
                 <div>
                     <Link href="/my-works" className="transition-all duration-200 hover:text-slate-400">

@@ -17,3 +17,10 @@ declare type SkillGroup = {
     title: string,
     skills: string[]
 }
+
+declare interface Social {
+    url: string
+    title: string
+    type: 'messaging' | 'general'
+    icon: RemixiconComponentType
+}

@@ -30,7 +30,7 @@ const Hero = () => {
                         <h4 className='text-slate-400'>He crafts responsive websites where technology meets creativity</h4>
                         <div>
                             <Link href="/contact-me">
-                                <button className='bg-inherit border-2 px-4 py-2 border-solid border-[#C778DD] hover:text-slate-400 transition-all duration-200'>
+                                <button className='bg-inherit border-2 px-4 py-2 border-solid border-[#C778DD] transition-all duration-200 hover:bg-[#C778DD]/10'>
                                     Contact Options
                                 </button>
                             </Link>
@@ -52,13 +52,13 @@ const Hero = () => {
                             src={logoOutlined}
                             alt="Logo Outlined"
                             width={150}
-                            className="absolute top-10 left-18 z-10"
+                            className="absolute top-10 left-18 z-10 max-sm:hidden"
                         />
                         <Image
                             src={dots}
                             alt="Dots"
                             width={100}
-                            className="absolute bottom-0 right-12 z-10"
+                            className="absolute bottom-0 right-12 z-10 max-sm:hidden"
                         />
                     </div>
                 </Grid>
@@ -68,7 +68,7 @@ const Hero = () => {
                 alignItems="center"
             >
                 <Stack>
-                    <div className="relative border-2 border-slate-500 px-10 py-10 text-center font-semibold text-2xl">
+                    <div className="relative border-2 border-slate-500 px-10 py-10 text-center font-semibold md:text-2xl">
                         <span>Code is poetry, but debugging is a detective novel.</span>
                         <Image
                             src={qutation}
@@ -81,7 +81,7 @@ const Hero = () => {
                             className='absolute -bottom-3 right-10 rotate-180'
                         />
                     </div>
-                    <div className="self-end border-2 border-slate-500 px-10 py-5 border-t-0 text-center text-2xl">
+                    <div className="self-end border-2 border-slate-500 px-10 py-5 border-t-0 text-center md:text-2xl">
                         - Dr. Who
                     </div>
                 </Stack>

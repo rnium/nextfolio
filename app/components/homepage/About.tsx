@@ -4,7 +4,7 @@ import Link from 'next/link';
 import about_img from '@/public/images/group50.png'
 
 
-const HomepageAbout = () => {
+const About = () => {
   return (
     <Box>
       <div className="flex gap-5 items-center">
@@ -12,7 +12,7 @@ const HomepageAbout = () => {
           <span className='text-[#C778DD]'>#</span>
           about-me
         </h4>
-        <div className="w-96 h-[1px] bg-[#C778DD]" />
+        <div className="max-sm:hidden w-96 h-[1px] bg-[#C778DD]" />
       </div>
       <Grid 
         container
@@ -21,6 +21,7 @@ const HomepageAbout = () => {
       >
         <Grid
           size={{ xs: 12, md: 7 }}
+          className="max-sm:mt-5"
         >
           <Stack
             spacing={4}
@@ -29,11 +30,11 @@ const HomepageAbout = () => {
               Hello, I'm Rony
             </div>
             <div className='text-slate-400'>
-              I'm a self-taught full-stack developer based in Sylhet, Bangladesh.
+              I'm a full-stack developer based in Sylhet, Bangladesh.
               I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
             </div>
             <div className='text-slate-400'>
-              Transforming my ideas into a solution has been my passion for over two years.
+              Transforming my ideas into a solution has been my passion for over four years.
               I have been helping various government and private organizations modernize their traditional workflows and establish their online presence. I always strive to learn about the newest technologies and frameworks.
             </div>
             <div>
@@ -63,4 +64,4 @@ const HomepageAbout = () => {
   )
 }
 
-export default HomepageAbout
+export default About

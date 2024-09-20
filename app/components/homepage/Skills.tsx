@@ -14,7 +14,7 @@ const Skills = () => {
                     <span className='text-[#C778DD]'>#</span>
                     skills
                 </h4>
-                <div className="w-96 h-[1px] bg-[#C778DD]" />
+                <div className="max-sm:hidden w-96 h-[1px] bg-[#C778DD]" />
             </div>
             <Grid
                 container

@@ -1,6 +1,8 @@
 import ugrp_banner from '@/public/images/projects/ugrp.png'
 import clearance_banner from '@/public/images/projects/clearance.png'
 import hifi_banner from '@/public/images/projects/hifi.png'
+import { RiGithubFill, RiTelegramFill, RiLinkedinFill } from '@remixicon/react';
+
 
 export const navlinks: NavLink[] = [
     {
@@ -76,7 +78,28 @@ export const skillGroupsData: SkillGroup[][] = [
         },
         {
             title: "Others",
-            skills: ['Markdown', 'Git', 'Github Actions', 'Vim', 'Postman']
+            skills: ['Data Structures & Algorithms', 'Markdown', 'Git', 'Github Actions', 'Vim', 'Postman']
         }
     ]
+]
+
+export const socials: Social[] = [
+    {
+        url: 'https://github.com/rnium',
+        title: 'github/rnium',
+        icon: RiGithubFill,
+        type: 'general'
+    },
+    {
+        url: 'https://t.me/si_rony',
+        title: 't.me/si_rony',
+        icon: RiTelegramFill,
+        type: "messaging"
+    },
+    {
+        url: 'https://www.linkedin.com/in/sirony',
+        title: 'linkedin/sirony',
+        icon: RiLinkedinFill,
+        type: 'general'
+    },
 ]

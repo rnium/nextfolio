@@ -9,9 +9,9 @@ import NavLinks from './NavLinks';
 const Navbar = () => {
     return (
         <Box sx={{display: 'flex'}}>
-            <AppBar elevation={0} component='nav' sx={{ backgroundColor: '#282C33' }}>
+            <AppBar elevation={0} component='nav' className='' sx={{ backgroundColor: '#282C33' }}>
                 <Toolbar
-                    className='mx-20 max-sm:mx-0'
+                    className='mx-28 my-1 max-sm:mx-5'
                 >
                     <Box flexGrow={1}>
                         <Link href="/">
@@ -25,7 +25,10 @@ const Navbar = () => {
                                     alt="logo"
                                     quality={100}
                                 />
-                                <h5 className="font-bold">
+                                <h5 className="font-bold md:hidden">
+                                    SI Rony
+                                </h5>
+                                <h5 className="font-bold max-sm:hidden">
                                     Saiful Islam Rony
                                 </h5>
                             </Stack>
@@ -34,6 +37,7 @@ const Navbar = () => {
                     <Stack
                         direction='row'
                         spacing={3}
+                        className="max-sm:hidden"
                     >
                         <NavLinks />
                     </Stack>
