@@ -71,7 +71,7 @@ export const projects: ProjectData[] = [
         type: 'other',
         banner: tv3_banner,
         description: `Official website of TechnoVenture 3.0 for attracting participants and managing contest registrations`,
-        techstack: 'Django, ReactJS',
+        techstack: 'Django, NextJS',
         github: 'https://github.com/rnium/eeefest_frontend',
         liveurl: 'https://www.seceeefest.tech'
     },
@@ -89,7 +89,7 @@ export const projects: ProjectData[] = [
         banner: lungspot_banner,
         description: `Web app for detecting the type of lung tumor by using CT scan images, utilizing a 
         deep learning model`,
-        techstack: 'Django, ReactJS, Keras, Tensorflow',
+        techstack: 'Keras, Tensorflow, Django, ReactJS',
         github: 'https://github.com/rnium/lungspot'
     },
     {
@@ -122,7 +122,7 @@ export const skillGroupsData: SkillGroup[][] = [
     [
         {
             title: 'Server',
-            skills: ['Linux', 'Docker', 'Nginx', 'Gunicorn', 'PostgreSQL', 'MySQL']
+            skills: ['Linux', 'Docker', 'Nginx', 'uWSGI', 'Gunicorn', 'PostgreSQL', 'MySQL']
         },
         {
             title: "Others",
