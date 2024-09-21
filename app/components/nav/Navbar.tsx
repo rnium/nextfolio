@@ -8,8 +8,13 @@ import NavLinks from './NavLinks';
 
 const Navbar = () => {
     return (
-        <Box sx={{display: 'flex'}}>
-            <AppBar elevation={0} component='nav' className='' sx={{ backgroundColor: '#282C33' }}>
+        <Box sx={{ display: 'flex' }}>
+            <AppBar
+                elevation={0}
+                component='nav'
+                className='backdrop-blur-md'
+                sx={{ backgroundColor: '#282C33E6' }}
+            >
                 <Toolbar
                     className='mx-28 my-1 max-sm:mx-5'
                 >

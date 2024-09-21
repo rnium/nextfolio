@@ -1,6 +1,11 @@
 import ugrp_banner from '@/public/images/projects/ugrp.png'
 import clearance_banner from '@/public/images/projects/clearance.png'
 import hifi_banner from '@/public/images/projects/hifi.png'
+import fclassroom_banner from '@/public/images/projects/fclassroom.png'
+import tv3_banner from '@/public/images/projects/tv3.png'
+import grabit_banner from '@/public/images/projects/grabit.png'
+import lungspot_banner from '@/public/images/projects/lungspot.png'
+import passito_banner from '@/public/images/projects/passito.jpg'
 import { RiGithubFill, RiTelegramFill, RiLinkedinFill } from '@remixicon/react';
 
 
@@ -51,6 +56,49 @@ export const projects: ProjectData[] = [
         description: `The official eCommerce platform of HiFi Computer, The leading IT solution in Sylhet, Bangladesh `,
         techstack: 'Django, NextJS',
         liveurl: 'https://hificomputerbd.com/'
+    },
+    {
+        title: "Flipped Classroom",
+        type: 'other',
+        banner: fclassroom_banner,
+        description: `An LMS EdTech, built under a research project of Bangladesh Technical Education Board`,
+        techstack: 'Django, SASS, JQuery, ChartJS',
+        github: 'https://github.com/rnium/flippedclassroom',
+        liveurl: 'https://flippedclassroom.pythonanywhere.com/'
+    },
+    {
+        title: "TechnoVenture 3.0",
+        type: 'other',
+        banner: tv3_banner,
+        description: `Official website of TechnoVenture 3.0 for attracting participants and managing contest registrations`,
+        techstack: 'Django, ReactJS',
+        github: 'https://github.com/rnium/eeefest_frontend',
+        liveurl: 'https://www.seceeefest.tech'
+    },
+    {
+        title: "GrabIT",
+        type: 'other',
+        banner: grabit_banner,
+        description: `A web scraping application for extracting IT product data from various websites`,
+        techstack: 'FastAPI, ReactJS',
+        github: 'https://github.com/rnium/grabit'
+    },
+    {
+        title: "LungSpot",
+        type: 'other',
+        banner: lungspot_banner,
+        description: `Web app for detecting the type of lung tumor by using CT scan images, utilizing a 
+        deep learning model`,
+        techstack: 'Django, ReactJS, Keras, Tensorflow',
+        github: 'https://github.com/rnium/lungspot'
+    },
+    {
+        title: "Passito",
+        type: 'other',
+        banner: passito_banner,
+        description: `A simple password manager desktop app for encrypting and storing passwords in local machine`,
+        techstack: 'Python, Tkinter, SQLite',
+        github: 'https://github.com/rnium/passito'
     },
 ]
 

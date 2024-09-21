@@ -4,7 +4,7 @@ declare type NavLink = {
 }
 
 declare type ProjectData = {
-    type: 'commercial' | 'research' | 'hobby'
+    type: 'commercial' | 'other'
     banner: any,
     title: string,
     description: string,

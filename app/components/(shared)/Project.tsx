@@ -18,7 +18,7 @@ const Project = ({ data }: { data: ProjectData }) => {
         className="px-5 py-4"
         spacing={2}
       >
-        <div className="text-2xl font-semibold">{data.title}</div>
+        <div className="max-sm:text-xl text-2xl font-semibold">{data.title}</div>
         <div className="text-slate-400">
           {data.description}
         </div>
