@@ -96,7 +96,7 @@ export const projects: ProjectData[] = [
         title: "Passito",
         type: 'other',
         banner: passito_banner,
-        description: `A simple password manager desktop app for encrypting and storing passwords in local machine`,
+        description: `A simple password manager desktop app that stores hashed passwords in the local machine`,
         techstack: 'Python, Tkinter, SQLite',
         github: 'https://github.com/rnium/passito'
     },
