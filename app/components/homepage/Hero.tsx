@@ -29,11 +29,11 @@ const Hero = () => {
                         </h2>
                         <h4 className='text-slate-400'>He crafts responsive web applications where technology meets creativity</h4>
                         <div>
-                            <Link href="/contact-me">
-                                <button className='btn-primary'>
+                            <button className='btn-primary'>
+                                <Link href="/contact-me">
                                     Contact Options
-                                </button>
-                            </Link>
+                                </Link>
+                            </button>
                         </div>
 
                     </Stack>
