@@ -39,7 +39,7 @@ const About = () => {
             </div>
             <div>
               <Link href="/about-me">
-                <button className='bg-inherit border-2 px-4 py-2 border-solid border-[#C778DD] hover:text-slate-400 transition-all duration-200'>
+                <button className='btn-primary'>
                   Learn More --&gt;
                 </button>
               </Link>

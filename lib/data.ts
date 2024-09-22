@@ -19,7 +19,7 @@ export const navlinks: NavLink[] = [
         path: '/my-works'
     },
     {
-        title: 'about',
+        title: 'about-me',
         path: '/about-me'
     },
     {
@@ -150,4 +150,26 @@ export const socials: Social[] = [
         icon: RiLinkedinFill,
         type: 'general'
     },
+]
+
+export const aboutme_details = [
+    'Greetings!',
+    `I am a full-stack developer with professional experience in building
+        secure and reliable web applications.
+        I enjoy solving complex problems and learning new
+        skills. I am passionate about creating high-quality
+        products that follows best practices and industry standards.`,
+    `I've worked on a variety of projects over the years using multiple 
+        technology stack and I'm proud of the progress I've made.
+        In recent times, I've worked with government institutions like Bangladesh Technical Education Board (BTEB) 
+        to support their research project and Sylhet Engineering College (SEC) to digitalize their traditional
+        workflows. The projects that I've worked on are currently in production and 
+        I'm officially the maintainer of them.`,
+    `I love creating solutions that help people overcome challenges, simplify their tasks,
+        and improve their daily lives. It's fulfilling to see how ideas can make a real difference.
+        As someone who is open to learning, I enjoy exploring new technologies that can be applied to my projects, 
+        enhancing the application's efficiency, robustness, scalability, 
+        and user friendliness. I am eager to collaborate with a team that
+        works on innovative projects where I can 
+        share ideas and make something even better.`,
 ]

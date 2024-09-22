@@ -9,6 +9,7 @@ const Project = ({ data }: { data: ProjectData }) => {
     >
       <Image
         src={data.banner}
+        placeholder="blur"
         alt={data.title}
       />
       <div className="border-t border-b border-slate-400 py-2 px-2 text-slate-400">
@@ -32,7 +33,7 @@ const Project = ({ data }: { data: ProjectData }) => {
               <a
                 href={data.liveurl}
                 target="_blank"
-                className="px-3 py-2 border border-[#C778DD] hover:bg-[#C778DD]/10"
+                className="btn-primary"
 
               >
                 Live &lt;~&gt;

@@ -27,10 +27,10 @@ const Hero = () => {
                             &nbsp;and novice&nbsp;
                             <span className="text-[#C778DD]">DevOps Engineer</span>
                         </h2>
-                        <h4 className='text-slate-400'>He crafts responsive websites where technology meets creativity</h4>
+                        <h4 className='text-slate-400'>He crafts responsive web applications where technology meets creativity</h4>
                         <div>
                             <Link href="/contact-me">
-                                <button className='bg-inherit border-2 px-4 py-2 border-solid border-[#C778DD] transition-all duration-200 hover:bg-[#C778DD]/10'>
+                                <button className='btn-primary'>
                                     Contact Options
                                 </button>
                             </Link>
@@ -42,12 +42,39 @@ const Hero = () => {
                     size={{ xs: 12, md: 6 }}
                 >
                     <div className="relative w-100">
-                        <Image
-                            width={350}
-                            src={pixelme}
-                            alt="Pixel Me"
-                            className='mx-auto z-20 relative'
-                        />
+                        <div className='max-w-[400px] mx-auto flex flex-col items-center'>
+                            <Image
+                                width={350}
+                                src={pixelme}
+                                alt="Pixel Me"
+                                quality={100}
+                                className='z-20 relative'
+                            />
+                            <div
+                                className='px-4 py-1 border border-slate-400 flex justify-center items-center space-x-3'
+                            >
+                                <div
+                                    className='relative'
+                                >
+                                    <div
+                                        className='absolute animate-ping h-3 w-3 bg-[#C778DD] rounded-full'
+                                    />
+                                    <div
+                                        className='h-3 w-3 bg-[#C778DD] rounded-full'
+                                    />
+                                </div>
+                                <div className='text-slate-400 max-sm:text-center'>
+                                    Currently Working at&nbsp;
+                                    <a
+                                        href='https://hificomputerbd.com/'
+                                        target="_blank"
+                                        className='text-white'
+                                    >
+                                        HiFi Computer
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <Image
                             src={logoOutlined}
                             alt="Logo Outlined"
@@ -58,9 +85,10 @@ const Hero = () => {
                             src={dots}
                             alt="Dots"
                             width={100}
-                            className="absolute bottom-0 right-12 z-10 max-sm:hidden"
+                            className="absolute bottom-20 right-12 z-10 max-sm:hidden"
                         />
                     </div>
+
                 </Grid>
             </Grid>
             <Stack sx={{ mt: 10 }}
@@ -68,7 +96,7 @@ const Hero = () => {
                 alignItems="center"
             >
                 <Stack>
-                    <div className="relative border-2 border-slate-500 px-10 py-10 text-center font-semibold md:text-2xl">
+                    <div className="relative border-2 border-slate-500 px-10 py-7 text-center font-semibold md:text-2xl">
                         <span>Code is poetry, but debugging is a detective novel.</span>
                         <Image
                             src={qutation}
@@ -81,7 +109,7 @@ const Hero = () => {
                             className='absolute -bottom-3 right-10 rotate-180'
                         />
                     </div>
-                    <div className="self-end border-2 border-slate-500 px-10 py-5 border-t-0 text-center md:text-2xl">
+                    <div className="self-end border-2 border-slate-500 px-10 max-sm:py-3 py-5 border-t-0 text-center md:text-2xl">
                         - Dr. Who
                     </div>
                 </Stack>

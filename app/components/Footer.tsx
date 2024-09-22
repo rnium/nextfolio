@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="font-bold">SI Rony</div>
           </div>
           <div>
-            Full-stack developer
+            Sylhet, Bangladesh
           </div>
         </div>
         <div className="flex max-sm:justify-center md:justify-end">
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="max-sm:mt-7 mt-4 mb-2 flex justify-center items-center space-x-1 text-slate-400">
-        <RiCopyrightLine 
+        <RiCopyrightLine
           size={25}
         />
         <div>Copyright {(new Date).getFullYear()}. Made by Rony</div>
