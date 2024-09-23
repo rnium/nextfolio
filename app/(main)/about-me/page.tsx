@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { aboutme_details } from '@/lib/data';
 import myPhoto from '@/public/images/photo1.jpg';
-import { RiDownloadLine, RiLoader4Line } from '@remixicon/react';
+import DownloadResumeBtn from '@/app/components/(micro)/DownloadResumeBtn';
 
 
 export const metadata: Metadata = {
@@ -40,18 +40,7 @@ const Page = () => {
               ))
             }
             <div className="flex pt-5 max-sm:justify-center">
-              <button
-                className='btn-primary px-10'
-              >
-                <RiDownloadLine 
-                  size={20}
-                />
-                {/* <RiLoader4Line 
-                  size={20}
-                  className="animate-spin"
-                /> */}
-                <span>Resume</span>
-              </button>
+              <DownloadResumeBtn />
             </div>
           </div>
         </Grid>
