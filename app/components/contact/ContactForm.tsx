@@ -6,6 +6,7 @@ import * as Yup from 'yup'
 import Input from '../(shared)/Input';
 import { RiSendPlaneLine as RiSendPlaneLine } from '@remixicon/react';
 import { Grid2 as Grid } from '@mui/material';
+import { useToast } from '@/hooks/use-toast';
 
 const ContactForm = () => {
     const validationSchema = Yup.object({
@@ -14,6 +15,7 @@ const ContactForm = () => {
         subject: Yup.string().required().min(3).max(100),
         body: Yup.string().required("Message body is required").min(3, 'Min length is 3').max(1000, 'Max length is 1000'),
     })
+    const { toast } = useToast();
     return (
         <Formik
             initialValues={{
@@ -25,7 +27,7 @@ const ContactForm = () => {
             validationSchema={validationSchema}
             onSubmit={
                 (values) => {
-                    console.log(values);
+                    console.log(values)
 
                 }
             }
@@ -72,7 +74,7 @@ const ContactForm = () => {
                                 onBlur={handleBlur}
                                 error={Boolean(touched?.subject && errors?.subject)}
                                 helperText={Boolean(touched?.subject && errors?.subject) && errors?.subject}
-                                
+
                             />
                         </Grid>
                         <Grid

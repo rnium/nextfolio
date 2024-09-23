@@ -6,8 +6,9 @@ import "@fontsource/fira-code/500.css";
 import "@fontsource/fira-code/600.css";
 import "@fontsource/fira-code/700.css";
 import { Fira_Code } from 'next/font/google'
-import "./globals.scss";
+import "./globals.css";
 import theme from './theme';
+import { Toaster } from '@/components/ui/toaster';
 
 const firacode = Fira_Code({ subsets: ['latin'] })
 
@@ -33,6 +34,7 @@ export default function RootLayout({
             color="#C778DD"
           />
           {children}
+          <Toaster />
         </body>
       </ThemeProvider>
     </html>

@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { aboutme_details } from '@/lib/data';
 import myPhoto from '@/public/images/photo1.jpg';
-import { RiDownloadLine } from '@remixicon/react';
+import { RiDownloadLine, RiLoader4Line } from '@remixicon/react';
 
 
 export const metadata: Metadata = {
@@ -46,6 +46,10 @@ const Page = () => {
                 <RiDownloadLine 
                   size={20}
                 />
+                {/* <RiLoader4Line 
+                  size={20}
+                  className="animate-spin"
+                /> */}
                 <span>Resume</span>
               </button>
             </div>
