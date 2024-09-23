@@ -35,7 +35,7 @@ export const projects: ProjectData[] = [
         banner: clearance_banner,
         description: `SEC Clearance Portal built for seamless clearance request and
                         managing applications in a modern way`,
-        techstack: 'Django, ReactJS, Material UI',
+        techstack: 'Django, DRF, ReactJS',
         github: 'https://github.com/rnium/sec_clearance',
         liveurl: 'https://www.secclearance.com/'
     },
@@ -45,7 +45,7 @@ export const projects: ProjectData[] = [
         banner: ugrp_banner,
         description: `SEC Undergraduate Result Portal is an 
                         EdTech for semester result processing and document generation`,
-        techstack: 'Django, HTML, SASS, Bootstrap, JQuery',
+        techstack: 'Django, DRF, HTML, Bootstrap, JQuery',
         github: 'https://github.com/rnium/sec_ugrp',
         liveurl: 'https://secugrp.com/'
     },
@@ -54,7 +54,7 @@ export const projects: ProjectData[] = [
         type: 'commercial',
         banner: hifi_banner,
         description: `The official eCommerce platform of HiFi Computer, The leading IT solution in Sylhet, Bangladesh `,
-        techstack: 'Django, NextJS',
+        techstack: 'Django, DRF, NextJS',
         liveurl: 'https://hificomputerbd.com/'
     },
     {
@@ -62,7 +62,7 @@ export const projects: ProjectData[] = [
         type: 'other',
         banner: fclassroom_banner,
         description: `An LMS EdTech, built under a research project of Bangladesh Technical Education Board`,
-        techstack: 'Django, SASS, JQuery, ChartJS',
+        techstack: 'Django, DRF, JQuery, ChartJS',
         github: 'https://github.com/rnium/flippedclassroom',
         liveurl: 'https://flippedclassroom.pythonanywhere.com/'
     },
@@ -71,7 +71,7 @@ export const projects: ProjectData[] = [
         type: 'other',
         banner: tv3_banner,
         description: `Official website of TechnoVenture 3.0 for attracting participants and managing contest registrations`,
-        techstack: 'Django, NextJS',
+        techstack: 'Django, DRF, NextJS',
         github: 'https://github.com/rnium/eeefest_frontend',
         liveurl: 'https://www.seceeefest.tech'
     },

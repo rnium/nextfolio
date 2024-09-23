@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { Formik, getIn } from 'formik';
 import * as Yup from 'yup'
 import Input from '../(shared)/Input';
-import { RiSendPlaneLine as RiSendPlaneLine } from '@remixicon/react';
+import { RiSendPlaneLine as RiSendPlaneLine, RiLoader3Line } from '@remixicon/react';
 import { Grid2 as Grid } from '@mui/material';
 import { useToast } from '@/hooks/use-toast';
 import { usePost } from '@/hooks/use-api';
@@ -29,7 +29,7 @@ const ContactForm = () => {
         }
         if (error) {
             toast({
-                title: error?.title || 'Sorry.. :|',
+                title: error?.title || 'Sorry.. :(',
                 description: error?.description || JSON.stringify(error),
                 variant: 'destructive'
             })
@@ -46,7 +46,7 @@ const ContactForm = () => {
             }}
             validationSchema={validationSchema}
             onSubmit={
-                (values, {resetForm}) => {
+                (values, { resetForm }) => {
                     perform_post(values);
                     resetForm();
                 }
@@ -128,9 +128,17 @@ const ContactForm = () => {
                                 >
 
                                     <span>Send Message</span>
-                                    <RiSendPlaneLine
-                                        size={20}
-                                    />
+                                    {
+                                        loading ?
+                                            <RiLoader3Line
+                                                className='animate-spin'
+                                                size={25}
+                                            />
+                                            :
+                                            <RiSendPlaneLine
+                                                size={20}
+                                            />
+                                    }
                                 </button>
                             </div>
                         </Grid>
