@@ -12,6 +12,7 @@ const NavLinks = () => {
             {
                 navlinks.map((nav: NavLink, idx: number) => (
                     <Link
+                        key={idx}
                         href={nav.path}
                         className={pathname === nav.path ? '' : 'text-slate-400'}
                     >

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Box, Chip, Stack } from "@mui/material";
-import BoltIcon from '@mui/icons-material/Bolt';
+import { Box, Stack } from "@mui/material";
+
 
 const Project = ({ data }: { data: ProjectData }) => {
   return (

@@ -2,10 +2,8 @@
 const SkillGroupItem = (
   {
     groupData,
-    key
   }: {
     groupData: SkillGroup,
-    key?: any
   }
 ) => {
   return (

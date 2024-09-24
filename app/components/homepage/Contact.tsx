@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Grid2 as Grid, Stack } from '@mui/material';
+import { Box, Grid2 as Grid } from '@mui/material';
 import { RiTelegramFill, RiLinkedinFill } from '@remixicon/react';
 
 
@@ -21,7 +21,7 @@ const Contact = () => {
                     size={{ xs: 12, md: 6 }}
                 >
                     <div className="text-slate-400">
-                        I'm open to collaborative opportunities. If you have any queries
+                        I&apos;m open to collaborative opportunities. If you have any queries
                         feel free to dm me. I welcome your feedback, questions, and suggestions
                         I make an effort to respond to all messages within a few hours,
                         although it may take me longer during busy periods.

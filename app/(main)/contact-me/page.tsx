@@ -17,7 +17,7 @@ const Page = () => {
         <div className="text-4xl font-semibold">
           <span className='text-[#C778DD]'>/</span>contact-me
         </div>
-        <div className="text-slate-300">Let's discuss something</div>
+        <div className="text-slate-300">Let&apos;s discuss something</div>
       </div>
       <Grid
         container
@@ -30,9 +30,9 @@ const Page = () => {
         >
           <div className='text-slate-400'>
             Whether you have a question, feedback, or just want to say hello,
-            I'd love to hear from you! Please feel free to reach out by filling
+            I&apos;d love to hear from you! Please feel free to reach out by filling
             out the message form below, or use any of the other contact methods listed.
-            I'll get back to you as soon as possible.
+            I&apos;ll get back to you as soon as possible.
           </div>
           <ContactForm />
         </Grid>

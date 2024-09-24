@@ -24,7 +24,7 @@ const DownloadResumeBtn = () => {
                 variant: 'destructive'
             })
         }
-    }, [success, error])
+    }, [success, error, toast])
     return (
         <button
             className='btn-primary px-10 disabled:btn-secondary disabled:px-10'

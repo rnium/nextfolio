@@ -27,10 +27,10 @@ const About = () => {
             spacing={4}
           >
             <div className='text-slate-400'>
-              Hello, I'm Rony
+              Hello, I&apos;m Rony
             </div>
             <div className='text-slate-400'>
-              I'm a full-stack developer based in Sylhet, Bangladesh.
+              I&apos;m a full-stack developer based in Sylhet, Bangladesh.
               I can develop responsive web applications from scratch and raise them into modern user-friendly web experiences.
             </div>
             <div className='text-slate-400'>

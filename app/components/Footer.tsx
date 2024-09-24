@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { Box, Grid2 as Grid, Stack } from '@mui/material';
 import logo from '@/public/images/index.svg';
 import { socials } from '@/lib/data';
 import { RiCopyrightLine } from '@remixicon/react';

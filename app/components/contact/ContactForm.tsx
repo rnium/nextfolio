@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect } from 'react'
-import { Formik, getIn } from 'formik';
+import { Formik } from 'formik';
 import * as Yup from 'yup'
 import Input from '../(shared)/Input';
 import { RiSendPlaneLine as RiSendPlaneLine, RiLoader3Line } from '@remixicon/react';
@@ -34,7 +34,7 @@ const ContactForm = () => {
                 variant: 'destructive'
             })
         }
-    }, [success, error])
+    }, [success, error, toast])
 
     return (
         <Formik
@@ -124,7 +124,7 @@ const ContactForm = () => {
                                     className={loading ? "btn-secondary" : "btn-primary"}
                                     disabled={loading}
                                     type="submit"
-                                    onClick={e => handleSubmit()}
+                                    onClick={() => handleSubmit()}
                                 >
 
                                     <span>Send Message</span>
