@@ -31,11 +31,11 @@ const About = () => {
             </div>
             <div className='text-slate-400'>
               I'm a full-stack developer based in Sylhet, Bangladesh.
-              I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
+              I can develop responsive web applications from scratch and raise them into modern user-friendly web experiences.
             </div>
             <div className='text-slate-400'>
               Transforming my ideas into a solution has been my passion for over four years.
-              I have been helping various government and private organizations modernize their traditional workflows and establish their online presence. I always strive to learn about the newest technologies and frameworks.
+              I have been helping various institutions and private organizations modernize their traditional workflows and establish their online presence. I always strive to learn about the newest technologies and frameworks.
             </div>
             <div>
               <Link href="/about-me">

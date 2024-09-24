@@ -61,7 +61,7 @@ export const projects: ProjectData[] = [
         title: "Flipped Classroom",
         type: 'other',
         banner: fclassroom_banner,
-        description: `An LMS EdTech, built under a research project of Bangladesh Technical Education Board`,
+        description: `An LMS EdTech, built under a research project of Directorate of Technical Education, Bangladesh`,
         techstack: 'Django, DRF, JQuery, ChartJS',
         github: 'https://github.com/rnium/flippedclassroom',
         liveurl: 'https://flippedclassroom.pythonanywhere.com/'
@@ -161,7 +161,7 @@ export const aboutme_details = [
         products that follows best practices and industry standards.`,
     `I've worked on a variety of projects over the years using multiple 
         technology stack and I'm proud of the progress I've made.
-        In recent times, I've worked with government institutions like Bangladesh Technical Education Board (BTEB) 
+        In recent times, I've worked with government institutions like Directorate of Technical Education 
         to support their research project and Sylhet Engineering College (SEC) to digitalize their traditional
         workflows. The projects that I've worked on are currently in production and 
         I'm officially the maintainer of them.`,
