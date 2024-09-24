@@ -14,7 +14,7 @@ const firacode = Fira_Code({ subsets: ['latin'] })
 
 
 export const metadata: Metadata = {
-  title: "MSI Rony",
+  title: "SI Rony",
   description: "Portfolio of Md. Saiful Islam Rony",
 };
 

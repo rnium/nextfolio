@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.http import FileResponse, HttpResponseServerError
+from django.http import FileResponse, HttpResponse, HttpResponseServerError
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
@@ -34,7 +34,7 @@ def download_resume(request):
     resume = Resume.objects.all().first()
     if not resume:
         return HttpResponseServerError("<h1>Resume is not in the server</h1>")
-    return FileResponse(
-        open(resume.file.path, 'rb'),
-        filename=f"{settings.OWNER_NAME.lower()}_resume.pdf"
-    )
+    with open(resume.file.path, 'rb') as file:
+        response = HttpResponse(file.read(), content_type='application/pdf')
+        response['Content-Disposition'] = f'attachment; filename="{settings.OWNER_NAME.lower()}_resume.pdf"'
+        return response

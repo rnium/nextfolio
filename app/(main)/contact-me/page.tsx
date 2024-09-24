@@ -5,8 +5,8 @@ import { socials } from '@/lib/data';
 import ContactForm from '@/app/components/contact/ContactForm';
 
 export const metadata: Metadata = {
-  title: "Contact Me | MSI Rony",
-  description: "Get in touch with MSI Rony",
+  title: "Contact Me | SI Rony",
+  description: "Get in touch with SI Rony",
 }
 
 
@@ -15,7 +15,7 @@ const Page = () => {
     <div className='my-10 space-y-12'>
       <div className="flex flex-col space-y-2">
         <div className="text-4xl font-semibold">
-          <span className='text-[#C778DD]'>/</span>contact-me
+          <span className='text-[#C778DD]'>/</span>contact
         </div>
         <div className="text-slate-300">Let&apos;s discuss something</div>
       </div>

@@ -22,6 +22,7 @@ export const useGetFile = (
         try {
             const res: AxiosResponse = await axiosInstance.get(url, {
                 params,
+                responseType: 'blob'
             });
             const blob = new Blob([res.data as BlobPart])
             const fileURL = window.URL.createObjectURL(blob);

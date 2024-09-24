@@ -8,7 +8,7 @@ import { useToast } from '@/hooks/use-toast';
 
 
 const DownloadResumeBtn = () => {
-    const { perform_get, loading, success, error } = useGetFile(endpoints.getresume, 'msi_rony.pdf');
+    const { perform_get, loading, success, error } = useGetFile(endpoints.getresume, 'si_rony.pdf');
     const { toast } = useToast();
     useEffect(() => {
         if (success) {

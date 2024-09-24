@@ -14,7 +14,7 @@ const ProjectsSection = (
 ) => {
     return (
         <Box>
-            <h4 className='max-sm:text-2xl text-3xl font-medium'>
+            <h4 className='max-sm:text-xl text-3xl font-medium'>
                 <span className='text-[#C778DD]'>#</span>
                 {title}
             </h4>

@@ -17,7 +17,7 @@ const Navbar = () => {
                 sx={{ backgroundColor: '#282C33E6' }}
             >
                 <Toolbar
-                    className='mx-28 my-1 max-sm:mx-5'
+                    className='mx-28 my-1 max-sm:mx-1'
                 >
                     <Box flexGrow={1}>
                         <Stack

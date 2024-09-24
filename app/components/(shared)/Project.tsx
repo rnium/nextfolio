@@ -45,7 +45,7 @@ const Project = ({ data }: { data: ProjectData }) => {
               <a
                 href={data.github}
                 target="_blank"
-                className="px-3 text-slate-400 py-2 border border-slate-400 hover:bg-slate-400/10"
+                className="btn-secondary"
 
               >
                 Github &lt;=

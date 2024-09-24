@@ -8,8 +8,8 @@ import DownloadResumeBtn from '@/app/components/(micro)/DownloadResumeBtn';
 
 
 export const metadata: Metadata = {
-  title: "About Me | MSI Rony",
-  description: "Learn more about MSI Rony",
+  title: "About Me | SI Rony",
+  description: "Learn more about SI Rony",
 }
 
 const Page = () => {

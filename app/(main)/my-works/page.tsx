@@ -4,8 +4,8 @@ import { projects } from '@/lib/data';
 import ProjectsSection from '@/app/components/works/ProjectsSection';
 
 export const metadata: Metadata = {
-  title: "My Works | MSI Rony",
-  description: "See the works of MSI Rony",
+  title: "My Works | SI Rony",
+  description: "See the works of SI Rony",
 }
 
 

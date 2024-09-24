@@ -47,9 +47,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-sm:mt-7 mt-4 mb-2 flex justify-center items-center space-x-1 text-slate-400">
+      <div className="max-sm:mt-7 mt-4 mb-2 max-sm:text-sm flex justify-center items-center space-x-1 text-slate-400">
+        <RiCopyrightLine
+          size={20}
+          className="md:hidden"
+        />
         <RiCopyrightLine
           size={25}
+          className="max-sm:hidden"
         />
         <div>Copyright {(new Date).getFullYear()}. Made by Rony</div>
       </div>
