@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import pixelme from '@/public/images/pixelme.png'
 import logoOutlined from '@/public/images/logo-outlined.svg'
-import dots from '@/public/images/dots.svg'
+import dots from '@/public/images/dots-square.svg'
 import qutation from '@/public/images/quotation.svg'
 
 const Hero = () => {
