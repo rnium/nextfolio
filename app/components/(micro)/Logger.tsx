@@ -10,7 +10,7 @@ const Logger = () => {
 
     useEffect(() => {
         perform_post({})
-    }, [])
+    }, [perform_post])
 
     return (
         <div className='hidden'>

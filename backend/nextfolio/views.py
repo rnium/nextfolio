@@ -11,8 +11,7 @@ import time
 
 @api_view(['POST'])
 def log_vist(request):
-    client_ip = '8.8.8.8'
-    # client_ip = utils.get_client_ip(request)
+    client_ip = utils.get_client_ip(request)
     log, _ = VisitLog.objects.get_or_create(
         ip_addr = client_ip
     )
