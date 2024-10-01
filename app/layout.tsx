@@ -9,6 +9,7 @@ import { Fira_Code } from 'next/font/google'
 import "./globals.css";
 import theme from './theme';
 import { Toaster } from '@/components/ui/toaster';
+import Logger from './components/(micro)/Logger';
 
 const firacode = Fira_Code({ subsets: ['latin'] })
 
@@ -33,6 +34,7 @@ export default function RootLayout({
             showSpinner={false}
             color="#C778DD"
           />
+          <Logger />
           {children}
           <Toaster />
         </body>

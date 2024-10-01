@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from typing import Any, Dict, List, Optional, Tuple, Union
 from django.contrib import admin
 from django.http.request import HttpRequest
 from django.http.response import HttpResponse
@@ -38,9 +38,18 @@ class MessageAdmin(admin.ModelAdmin):
             message.save()
         return super().change_view(request, object_id, extra_context=extra_context, *args, **kwargs)
 
+
 class ResumeAdmin(admin.ModelAdmin):
     readonly_fields = ['updated']
     
 
+class LogAdmin(admin.ModelAdmin):
+    list_display = ['ip_addr', 'last_visit', 'city', 'region', 'country_name']
+    date_hierarchy = 'last_visit'
+    list_filter = ('country_name', 'city')
+    ordering = ['-last_visit']
+    
+
 admin.site.register(models.Message, MessageAdmin)
 admin.site.register(models.Resume, ResumeAdmin)
+admin.site.register(models.VisitLog, LogAdmin)

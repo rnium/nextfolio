@@ -5,9 +5,20 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializer import MessageSerializer
 from . import utils
-from .models import Resume
+from .models import Resume, VisitLog
 import time
 
+
+@api_view(['POST'])
+def log_vist(request):
+    client_ip = '8.8.8.8'
+    # client_ip = utils.get_client_ip(request)
+    log, _ = VisitLog.objects.get_or_create(
+        ip_addr = client_ip
+    )
+    utils.update_log(log)
+    return Response({'info': 'visit logged'})
+    
 
 @api_view(['POST'])
 def send_message(request):
@@ -34,6 +45,8 @@ def download_resume(request):
     resume = Resume.objects.all().first()
     if not resume:
         return HttpResponseServerError("<h1>Resume is not in the server</h1>")
+    resume.downloads += 1
+    resume.save()
     with open(resume.file.path, 'rb') as file:
         response = HttpResponse(file.read(), content_type='application/pdf')
         response['Content-Disposition'] = f'attachment; filename="{settings.OWNER_NAME.lower()}_resume.pdf"'

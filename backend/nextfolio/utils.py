@@ -4,7 +4,8 @@ from datetime import timedelta
 from django.core.exceptions import ValidationError
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
-from .models import Message
+from .models import Message, VisitLog
+from requests import get
 
 
 sendgrid_api_key = settings.SG_API_KEY
@@ -60,3 +61,25 @@ def has_limit(sender_ip):
         todays_msg_from_ip.count() >= PER_IP_MSG_LIMIT):
         return False
     return True
+
+
+def get_ip_info(ip):
+    required_fields = ['city', 'region', 'country_name']
+    res = get(f"https://ipapi.co/{ip}/json/")
+    json_data = {}
+    if res.ok:
+        json_data = res.json()
+    ip_info = {}
+    for field in required_fields:
+        ip_info[field] = json_data.get(field)
+    return ip_info
+      
+
+def update_log(log: VisitLog):
+    log.total_visits += 1
+    log.last_visit = timezone.now()
+    if not (log.city and log.region and log.country_name):
+        ip_info = get_ip_info(log.ip_addr)
+        for key, value in ip_info.items():
+            setattr(log, key, value)
+    log.save()
