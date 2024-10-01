@@ -1,5 +1,6 @@
 import Navbar from "../components/nav/Navbar";
 import Footer from "../components/Footer";
+import SocialNav from "../components/(micro)/SocialNav";
 
 export default function RootLayout({
   children,
@@ -12,6 +13,7 @@ export default function RootLayout({
         <Navbar />
       </div>
       <main className="mx-1 px-4 mt-10 py-7 md:mx-28">
+        <SocialNav />
         {children}
       </main>
       <div className="border-t-2 border-slate-400 bg-slate-400/10">
