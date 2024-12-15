@@ -27,7 +27,9 @@ const Hero = () => {
                             &nbsp;and novice&nbsp;
                             <span className="text-[#C778DD]">DevOps Engineer</span>
                         </h2>
-                        <h4 className='text-slate-400'>He crafts responsive web applications where technology meets creativity</h4>
+                        <h4 className='text-slate-400'>
+                            Passionate about building web applications and solving real world problems.
+                        </h4>
                         <div>
                             <button className='btn-primary'>
                                 <Link href="/contact-me">
@@ -42,7 +44,7 @@ const Hero = () => {
                     size={{ xs: 12, md: 6 }}
                 >
                     <div className="relative w-100">
-                        <div className='max-w-[400px] mx-auto flex flex-col items-center'>
+                        <div className='max-w-[450px] mx-auto flex flex-col items-center'>
                             <Image
                                 width={350}
                                 src={pixelme}
@@ -64,13 +66,13 @@ const Hero = () => {
                                     />
                                 </div>
                                 <div className='text-slate-400 max-sm:text-center'>
-                                    Currently Working at&nbsp;
+                                    Currently attending a training at&nbsp;
                                     <a
-                                        href='https://hificomputerbd.com/'
+                                        href='https://bjitgroup.com'
                                         target="_blank"
                                         className='text-white'
                                     >
-                                        HiFi Computer
+                                        BJIT
                                     </a>
                                 </div>
                             </div>

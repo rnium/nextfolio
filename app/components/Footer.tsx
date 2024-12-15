@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="font-bold">SI Rony</div>
           </div>
           <div>
-            Sylhet, Bangladesh
+            Dhaka, Bangladesh
           </div>
         </div>
         <div className="flex max-sm:justify-center md:justify-end">

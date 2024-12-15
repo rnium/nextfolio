@@ -30,7 +30,7 @@ const About = () => {
               Hello, I&apos;m Rony
             </div>
             <div className='text-slate-400'>
-              I&apos;m a full-stack developer based in Sylhet, Bangladesh.
+              I&apos;m a full-stack developer based in Dhaka, Bangladesh.
               I can develop responsive web applications from scratch and raise them into modern user-friendly web experiences.
             </div>
             <div className='text-slate-400'>

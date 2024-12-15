@@ -116,7 +116,7 @@ export const skillGroupsData: SkillGroup[][] = [
         },
         {
             title: 'Backend',
-            skills: ['Django', 'DRF', 'FastAPI']
+            skills: ['Django', 'DRF', 'FastAPI', 'Odoo']
         },
     ],
     [
@@ -164,7 +164,7 @@ export const aboutme_details = [
         In recent times, I've worked with government institutions like Directorate of Technical Education 
         to support their research project and Sylhet Engineering College (SEC) to digitalize their traditional
         workflows. The projects that I've worked on are currently in production and 
-        I'm officially the maintainer of them.`,
+        I've maintained them for a long time.`,
     `I love creating solutions that help people overcome challenges, simplify their tasks,
         and improve their daily lives. It's fulfilling to see how ideas can make a real difference.
         As someone who is open to learning, I enjoy exploring new technologies that can be applied to my projects, 
