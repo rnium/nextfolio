@@ -1,11 +1,13 @@
 import ugrp_banner from '@/public/images/projects/ugrp.png'
 import clearance_banner from '@/public/images/projects/clearance.png'
-import hifi_banner from '@/public/images/projects/hifi.png'
+import hifi_banner from '@/public/images/projects/hifi_updated.png'
 import fclassroom_banner from '@/public/images/projects/fclassroom.png'
 import tv3_banner from '@/public/images/projects/tv3.png'
 import grabit_banner from '@/public/images/projects/grabit.png'
 import lungspot_banner from '@/public/images/projects/lungspot.png'
 import passito_banner from '@/public/images/projects/passito.jpg'
+import supplies_banner from "@/public/images/projects/supplies.png";
+
 import { RiGithubFill, RiTelegramFill, RiLinkedinFill } from '@remixicon/react';
 
 
@@ -82,6 +84,14 @@ export const projects: ProjectData[] = [
         description: `A web scraping application for extracting IT product data from various websites`,
         techstack: 'FastAPI, ReactJS',
         github: 'https://github.com/rnium/grabit'
+    },
+    {
+        title: "Odoo Supply Management System",
+        type: 'other',
+        banner: supplies_banner,
+        description: `A procurement management system for managing supplies and vendors, built on Odoo`,
+        techstack: 'Odoo, Python, Jquery, Bootstrap',
+        github: 'https://github.com/rnium/supplies'
     },
     {
         title: "LungSpot",
