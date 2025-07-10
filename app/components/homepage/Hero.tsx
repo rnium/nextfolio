@@ -66,7 +66,7 @@ const Hero = () => {
                                     />
                                 </div>
                                 <div className='text-slate-400 max-sm:text-center'>
-                                    Currently attending a training at&nbsp;
+                                    Software Engineer at&nbsp;
                                     <a
                                         href='https://bjitgroup.com'
                                         target="_blank"
