@@ -75,7 +75,7 @@ export const projects: ProjectData[] = [
         description: `Official website of TechnoVenture 3.0 for attracting participants and managing contest registrations`,
         techstack: 'Django, DRF, NextJS',
         github: 'https://github.com/rnium/eeefest_frontend',
-        liveurl: 'https://www.seceeefest.tech'
+        liveurl: 'https://technoventure.sirony.xyz'
     },
     {
         title: "GrabIT",
